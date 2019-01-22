@@ -1,5 +1,5 @@
-FROM node:latest
-MAINTAINER Alex Kern <alex@kern.io>
+FROM node:alpine
+LABEL authors="Alex Kern <alex@kern.io>, Luc Bourdot <luc.bourdot@ac-dijon.fr"
  
 COPY . ./
 RUN npm install && npm run build
